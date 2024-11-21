@@ -39,6 +39,7 @@ header nav {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+	cursor: pointer;
 }
 
 .nav-right-section img {
@@ -82,12 +83,6 @@ main .main-input input {
 	outline: none;
 }
 
-input:focus {
-	background: none; 
-	outline: none; 
-	box-shadow: none; 
-	color: inherit; 
-}
 
 /* Hover para enlaces */
 .nav-right-section a {
@@ -161,6 +156,10 @@ footer .first-footer {
 	align-items: center;
 	border-bottom: 0.01px solid #222;
 }
+footer p {
+	cursor:default ;
+}
+
 footer .second-footer {
 	display: flex;
 	flex-direction: row;
@@ -177,6 +176,11 @@ footer .second-footer {
 }
 .second-footer .addons a{
 	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+.second-footer .addons a:hover{
+	text-decoration: underline;
 	color: #000;
 	cursor: pointer;
 }
